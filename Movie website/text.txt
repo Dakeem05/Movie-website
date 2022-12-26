@@ -1,0 +1,46 @@
+Queen Ramonda, Shuri, M'Baku, Okoye and the Dora Milaje fight to protect their nation from intervening world powers in the wake of King T'Challa's death. As the Wakandans strive to embrace their next chapter, the heroes must band together with Nakia and Everett Ross to forge a new path for their beloved kingdom.
+
+  if(password === confirmPassword){
+        p_check.style.display = "block";
+        cp_check.style.display = "block";
+    } else {
+        matchNote.style.display = "block";
+    }
+
+// const signUp = () =>{
+//   alert("hy")
+// }
+
+
+// signup.addEventListener("click", function(){
+
+//     let passWord = password.value;
+//     let real_name = realName.value;
+//     let user_name = userName.value;
+//     let phoneNumber = mobile.value;
+//     let gmail = email.value;
+//     let confirm_password = confirmPassword.value;
+//     let fieldNames = ["Fullname", "Username", "Mobile", "Email", "Password", "Confirm-password"]
+//     let user = [real_name, user_name, phoneNumber, gmail, passWord,confirm_password];
+//     for(i=0; i<user.length; i ++){
+//       document.cookie = fieldNames[i]+'='+user[i];
+//       // console.log(user[i]);
+//       // console.log(document.cookie);
+//       // console.log(fieldNames[i]);
+//       // +'='+user[i]
+//     };
+//     let userCookie = document.cookie;
+//     console.log(userCookie);
+//     // let info =[];
+//     // info.push(user);
+//     // function store() {
+//       // localStorage.setItem("Fullname", JSON.stringify(real_name));
+//       // localStorage.setItem("Username", JSON.stringify(user_name));
+//       // localStorage.setItem("Mobile", JSON.stringify(phoneNumber));
+//       // localStorage.setItem("Email", JSON.stringify(gmail));
+//       // localStorage.setItem("password", JSON.stringify(confirm_password));
+//       // i++
+//     // };
+//     /
+//     }); 
+  

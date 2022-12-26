@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> --><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <!-- <link type="text/css" rel="stylesheet" href="./src/css/lightslider.css" /> -->
+  <link rel="stylesheet" href="style.css">
+  <title>K-flix</title>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong" id="nav"> 
+         <a class="navbar-brand" href="#">
+        <img src="movielogo.jpg" width="50" height="50" alt="Logo">
+      </a>
+
+        <a class="navbar-brand" href="index.html" id="name">K-flix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" id="ul">
+            <li class="nav-item">
+              <a  class="nav-link" href="index.html" id="home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="current" href="#">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="#">Tv shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="account.html">Account</a>
+            </li>
+          </ul>
+          <form class="form-inline" id="section">
+              <a class="nav-link" href="#"><i id="search" class="bi-search" onclick="menutoggle()"></i></a>
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <a class="nav-link" id="user" href="account.html"><i  class='bi-person-circle'></i></a>
+            <a class="nav-link"  href="#"><button id="btn">Subscribe</button></a>
+          </form>
+        </div>
+      </nav> 
+
+
+</header>
+
+<section id="categories">
+  <div id="cover">
+  <h2 id="choose">Choose your genre of movies (two)</h2>
+  <button class="genre" onclick="CSSStyleDeclaration" id="r-btn">Romance</button>
+  <button class="genre" id="a-btn">Action</button>
+  <button class="genre" id="h-btn">Horror</button>
+  <button class="genre" id="s-btn">Sci-fi</button>
+  <button class="genre" id="c-btn">Comedy</button> 
+</div>
+<span id="alert">Can't select more than two genres</span>
+<button id="genre_back">Back</button>
+<button id="genre_next">Next</button>
+</section>
+
+<section id="movies">
+    <div class="grid">
+    <img src="blackpanther2.png" alt="blackadam" class="romance" >
+  </div>
+  <div class="grid">
+    <img src="Black adam.png" alt="blackadam" class="romance" >
+  </div>
+  <div class="grid">
+    <img src="Blackpanther.png" alt="blackadam" class="romance" >
+  </div>
+  <div class="grid">
+    <img src="blackpanther3.jpg" alt="blackadam" class="romance" >
+  </div>
+    <div class="grid">
+    <img src="blackpanther2.png" alt="blackadam" class="action" >
+  </div>
+  <div class="grid">
+    <img src="Black adam.png" alt="blackadam" class="action" >
+  </div>
+  <div class="grid">
+    <img src="Blackpanther.png" alt="blackadam" class="action" >
+  </div>
+  <div class="grid">
+    <img src="blackpanther3.jpg" alt="blackadam" class="action" >
+  </div>
+    <div class="grid">
+    <img src="blackpanther2.png" alt="blackadam" class="horror" >
+  </div>
+  <div class="grid">
+    <img src="Black adam.png" alt="blackadam" class="horror" >
+  </div>
+  <div class="grid">
+    <img src="Blackpanther.png" alt="blackadam" class="horror" >
+  </div>
+  <div class="grid">
+    <img src="blackpanther3.jpg" alt="blackadam" class="horror" >
+  </div>
+    <div class="grid">
+    <img src="blackpanther2.png" alt="blackadam" class="sci-fi" >
+  </div>
+  <div class="grid">
+    <img src="Black adam.png" alt="blackadam" class="sci-fi" >
+  </div>
+  <div class="grid">
+    <img src="Blackpanther.png" alt="blackadam" class="sci-fi" >
+  </div>
+  <div class="grid">
+    <img src="blackpanther3.jpg" alt="blackadam" class="sci-fi" >
+  </div>
+    <div class="grid">
+    <img src="blackpanther2.png" alt="blackadam" class="comedy" >
+  </div>
+  <div class="grid">
+    <img src="Black adam.png" alt="blackadam" class="comedy" >
+  </div>
+  <div class="grid">
+    <img src="Blackpanther.png" alt="blackadam" class="comedy" >
+  </div>
+  <div class="grid">
+    <img src="blackpanther3.jpg" alt="blackadam" class="comedy" >
+  </div>
+</section>
+
+<footer>
+  <div id="copyright"><article id="innercopy">Copyright <i class="bi-c-circle"></i> 2022 Copyright holder all right preserved | This website is made by <i class="bi-heart-fill"></i> Dakeem</article><article id="icresponse">Copyright <i class="bi-c-circle"></i> 2022 <i class="bi-heart-fill"></i> Dakeem</article></div>
+</footer>
+
+<script src="script5.js"></script>
+
+</body>
+</html>

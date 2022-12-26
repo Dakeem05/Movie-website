@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>K-flix</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong" id="nav"> 
+             <a class="navbar-brand" href="#">
+            <img src="movielogo.jpg" width="50" height="50" alt="Logo">
+          </a>
+    
+            <a class="navbar-brand" href="index.html" id="name">K-flix</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav" id="ul">
+                <li class="nav-item">
+                  <a  class="nav-link" href="index.html" id="home">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="home" href="movies.html">Movies</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="home" href="#">Tv shows</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="current" href="#">Account</a>
+                </li>
+              </ul>
+              <form class="form-inline" id="section">
+                  <a class="nav-link" href="#"><i id="search" class="bi-search" onclick="menutoggle()"></i></a>
+    
+                <a class="nav-link" id="user" href="#"><i  class='bi-person-circle'></i></a>
+                <a class="nav-link"  href="#"><button id="btn">Subscribe</button></a>
+              </form>
+            </div>
+          </nav> 
+    </header>
+    
+    <section >
+        <div class="container">
+          <form action="sign up" id="form1">
+            <h3 id="create">Log in</h3>
+            <input type="text" placeholder="Username" id="username_login" required>
+            <input type="password" placeholder="Password" id="password_login" required>
+            <span id="log" >Wrong password or username</span> 
+            
+            <div class="btn-box">
+              <button type="button" id="login">Log in</button>
+            </div>
+            <span><a href="retrieve.html" id="forgot">Forgot password?</a></span>
+          </form>
+    
+          <div class="already"><h5>Don't have an account? <a href="account.html">Sign up</a></h5></div>
+        </div>
+    </section>
+
+
+    <footer>
+   <div id="copyright"><article id="innercopy">Copyright <i class="bi-c-circle"></i> 2022 Copyright holder all right preserved | This website is made by <i class="bi-heart-fill"></i> Dakeem</article><article id="icresponse">Copyright <i class="bi-c-circle"></i> 2022 <i class="bi-heart-fill"></i> Dakeem</article></div>
+    </footer> 
+
+    <script src="script2.js"></script>
+</body>
+</html>

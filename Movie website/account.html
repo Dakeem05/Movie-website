@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playball&display=swap" rel="stylesheet">
+  <!-- <link type="text/css" rel="stylesheet" href="./src/css/lightslider.css" /> -->
+  <link rel="stylesheet" href="style.css">
+  <title>K-flix</title>
+</head>
+<body>
+
+    <!-- <div class="headerbg"> -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark shadow-5-strong" id="nav"> 
+         <a class="navbar-brand" href="#">
+        <img src="movielogo.jpg" width="50" height="50" alt="Logo">
+      </a>
+
+        <a class="navbar-brand" href="#" id="name">K-flix</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav" id="ul">
+            <li class="nav-item">
+              <a  class="nav-link" href="index.html" id="home">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="movies.html">Movies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="home" href="#">Tv shows</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="current" href="#">Account</a>
+            </li>
+          </ul>
+          <form class="form-inline" id="section">
+              <a class="nav-link" href="#"><i id="search" class="bi-search" onclick="menutoggle()"></i></a>
+            <!-- <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"> -->
+            <a class="nav-link" id="user" href="#"><i  class='bi-person-circle'></i></a>
+            <a class="nav-link"  href="#"><button id="btn">Subscribe</button></a>
+          </form>
+        </div>
+      </nav> 
+</header>
+
+<section >
+    <div class="container">
+      <form action="sign up" id="form1">
+        <h3 id="create">CREATE ACCOUNT</h3>
+        <input type="text" placeholder="Fullname" id="realname" required>
+        <input type="text" placeholder="Username" id="username" required>
+        <input type="tel" placeholder="Mobile number" id="mobile" required>
+        
+        <div class="btn-box">
+          <button type="button" id="next">Next</button>
+        </div>
+      </form>
+      
+      <form action="sign up" id="form2">
+        <h3 id="create">SIGN UP</h3>
+        <input type="email" placeholder="Email" id="email" required>
+        <input type="password" placeholder="Password" id="password" required><i id="p-check" class="bi-check-all" ></i>
+        <input type="password" placeholder="Confirm Password" id="confirmpassword" required><i id="cp-check" class="bi-check-all"></i>
+        <span id="match-note">Passwords don't match!</span>
+        
+        <div class="btn-box">
+          <button type="button" id="back">Back</button>
+          <button type="button" id="submit">Sign up</button>
+        </div>
+      </form>
+      
+      <div class="step-row">
+        <div id="progress"></div>
+        <div class="step-col"><small>Step 1</small></div>
+        <div class="step-col"><small>Step 2</small></div>
+      </div>
+
+      <div class="already"><h5>Already have an account? <a href="login.html">Log in</a></h5></div>
+    </div>
+</section> 
+
+</div>
+
+<footer>
+  <div id="copyright"><article id="innercopy">Copyright <i class="bi-c-circle"></i> 2022 Copyright holder all right preserved | This website is made by <i class="bi-heart-fill"></i> Dakeem</article><article id="icresponse">Copyright <i class="bi-c-circle"></i> 2022 <i class="bi-heart-fill"></i> Dakeem</article></div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
